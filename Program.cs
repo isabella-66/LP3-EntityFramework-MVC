@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 //container cria controllers com vies, ou seja, já cria o objeto dos controllers. não tem como mexer, mas configurar a criação de objetos
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<LabManagerContext>(
-    options => options.UseMySQL("server=localhost;database=estudante;user=estudante;password=estudante")
-); //
+    options => options.UseMySQL("server=localhost;database=estudante;user=estudante;password=estudantes")
+); 
 
 var app = builder.Build();
 

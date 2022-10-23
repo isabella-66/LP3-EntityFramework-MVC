@@ -12,13 +12,13 @@
 } 
 else
 {
-    <table class="table">
+    <table class="table table-responsive">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Ram</th>
                 <th>Processador</th>
-                <th>Ações</th>
+                <th colspan="2">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -30,6 +30,9 @@ else
                     <td>@computer.Processor</td>
                     <td>
                         <a class="btn btn-primary btn-sm" href="/Computer/Show/@computer.Id">Ver</a>
+                    </td>
+                    <td>
+                        <form action="/Computer/Delete/@computer.Id"><button class="btn btn-danger btn-sm">Excluir</button></form>
                     </td>
                 </tr>
             }

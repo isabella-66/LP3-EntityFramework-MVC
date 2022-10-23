@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/estudante/Documentos/SP3045463/MvcLabManager/MvcLabManager.csproj": {}
+    "C:\\Users\\Administrador\\Documents\\Ensino Médio - 3° ano\\LP3 3º\\Exercícios\\LP3-EntityFramework-MVC\\MvcLabManager.csproj": {}
   },
   "projects": {
-    "/home/estudante/Documentos/SP3045463/MvcLabManager/MvcLabManager.csproj": {
+    "C:\\Users\\Administrador\\Documents\\Ensino Médio - 3° ano\\LP3 3º\\Exercícios\\LP3-EntityFramework-MVC\\MvcLabManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/estudante/Documentos/SP3045463/MvcLabManager/MvcLabManager.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Documents\\Ensino Médio - 3° ano\\LP3 3º\\Exercícios\\LP3-EntityFramework-MVC\\MvcLabManager.csproj",
         "projectName": "MvcLabManager",
-        "projectPath": "/home/estudante/Documentos/SP3045463/MvcLabManager/MvcLabManager.csproj",
-        "packagesPath": "/home/estudante/.nuget/packages/",
-        "outputPath": "/home/estudante/Documentos/SP3045463/MvcLabManager/obj/",
+        "projectPath": "C:\\Users\\Administrador\\Documents\\Ensino Médio - 3° ano\\LP3 3º\\Exercícios\\LP3-EntityFramework-MVC\\MvcLabManager.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Documents\\Ensino Médio - 3° ano\\LP3 3º\\Exercícios\\LP3-EntityFramework-MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/estudante/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
