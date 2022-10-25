@@ -37,4 +37,21 @@ public class LabController : Controller
         _context.SaveChanges();
         return RedirectToAction("Index");
     }
+
+    public IActionResult Update()
+    {
+        return View();
+    }
+
+    public IActionResult UpdateData([FromForm] Lab lab)
+    {
+        Lab find = _context.Labs.Find(lab.Id);
+        find.Block = lab.Block;
+        find.Name = lab.Name;
+        find.Number = lab.Number;
+
+        _context.Labs.Update(find);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    }
 }

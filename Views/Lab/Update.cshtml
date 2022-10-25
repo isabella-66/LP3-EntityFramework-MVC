@@ -1,0 +1,43 @@
+@model MvcLabManager.Models.Lab; 
+
+@{
+    ViewData["Title"] = $"Editar Laboratório";
+}
+
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+<hr>
+
+<form action="UpdateData" method="post">
+    <div class="form-group row">
+        <label for="id" class="col-sm-2 col-form-label"><b>Id</b></label>
+        <div class="col-md-3">
+            <input type="number" name="id" id="id" class="form-control" required>
+        </div>
+    </div><br>
+    
+    <div class="form-group row">
+        <label for="number" class="col-sm-2 col-form-label"><b>Número</b></label>
+        <div class="col-md-3">
+            <input type="number" name="number" id="number" class="form-control" required>
+        </div>
+    </div><br>
+
+    <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label"><b>Nome</b></label>
+        <div class="col-md-3">
+            <input type="text" name="name" id="name" class="form-control" required>
+        </div>
+    </div><br>
+
+    <div class="form-group row">
+        <label for="block" class="col-sm-2 col-form-label"><b>Bloco</b></label>
+        <div class="col-md-3">
+            <input type="text" name="block" id="block" class="form-control" required>
+        </div>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a href="/Lab" class="btn btn-outline-warning">Cancelar</a>
+</form>
