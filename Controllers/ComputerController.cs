@@ -38,17 +38,18 @@ public class ComputerController : Controller
         return RedirectToAction("Index");
     }
 
-    public IActionResult Update()
+    public IActionResult Update(int id)
     {
-        return View();
+        Computer find = _context.Computers.Find(id);
+        return View(find);
     }
 
-    public IActionResult UpdateData([FromForm] Computer computer)
+    public IActionResult UpdateData(int id, [FromForm] Computer computer)
     {
-        Computer find = _context.Computers.Find(computer.Id);
-        find.Processor = computer.Processor;
+        Computer find = _context.Computers.Find(id);
         find.Ram = computer.Ram;
-
+        find.Processor = computer.Processor;
+        
         _context.Computers.Update(find);
         _context.SaveChanges();
         return RedirectToAction("Index");

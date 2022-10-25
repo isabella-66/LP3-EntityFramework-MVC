@@ -1,7 +1,7 @@
 @model MvcLabManager.Models.Computer; 
 
 @{
-    ViewData["Title"] = $"Editar Computador";
+    ViewData["Title"] = $"Editar Computador {Model.Id}";
 }
 
 <div class="text-center">
@@ -9,25 +9,25 @@
 </div>
 <hr>
 
-<form action="UpdateData" method="post">
+<form action="/Computer/UpdateData/@Model.Id" method="post">
     <div class="form-group row">
         <label for="id" class="col-sm-2 col-form-label"><b>Id</b></label>
         <div class="col-md-3">
-            <input type="number" name="id" id="id" class="form-control" required>
+            <input type="number" name="id" id="id" class="form-control-plaintext" value="@Model.Id" disabled>
         </div>
     </div><br>
     
     <div class="form-group row">
         <label for="ram" class="col-sm-2 col-form-label"><b>Ram</b></label>
         <div class="col-md-3">
-            <input type="text" name="ram" id="ram" class="form-control" required>
+            <input type="text" name="ram" id="ram" class="form-control" value="@Model.Ram" required>
         </div>
     </div><br>
 
     <div class="form-group row">
         <label for="processor" class="col-sm-2 col-form-label"><b>Processador</b></label>
         <div class="col-md-3">
-            <input type="text" name="processor" id="processor" class="form-control" required>
+            <input type="text" name="processor" id="processor" class="form-control" value="@Model.Processor" required>
         </div>
     </div><br>
     
