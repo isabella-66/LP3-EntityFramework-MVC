@@ -33,11 +33,6 @@ public class ComputerController : Controller
 
     public IActionResult CreateData([FromForm] Computer computer)
     {
-        List<Computer> computers = _context.Computers.ToList();
-        int computerId = _context.Computers.OrderBy.Last().Id + 1;
-        //int computerId = _context.Computers.Max(i => i.Id); //Max pega maior valor do BD e o i => i.Id faz uma espécie de foreach percorrendo os valores de Id, passando esse parâmetro pro Max
-        Computer computer = new Computer(computerId + 1, ram, processor);
-
         _context.Computers.Add(computer);
         _context.SaveChanges();
         return RedirectToAction("Index");
