@@ -1,12 +1,12 @@
 @model MvcLabManager.Models.Computer; 
 
 @{
-    ViewData["Title"] = $"Novo Computador";
+    ViewData["Title"] = $"Editar Computador {Model.Id}";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<form action="CreateData" method="post">
+<form action="Update" method="post">
     <p class="form-group">
         <label for="id"><b>Id</b></label>
         <div class="col-md-15">
@@ -28,5 +28,5 @@
         </div>
     </p>
     
-    <button type="submit" class="btn btn-success">Enviar</button>
+    <button type="submit" class="btn btn-success">Salvar</button>
 </form>
