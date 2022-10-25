@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Administrador\Documents\Ensino Médio - 3° ano\LP3 3º\Exercícios\LP3-EntityFramework-MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Administrador/Documents/Ensino Médio - 3° ano/LP3 3º/Exercícios/LP3-EntityFramework-MVC/Views/Computer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrador/Documents/Ensino Médio - 3° ano/LP3 3º/Exercícios/LP3-EntityFramework-MVC/Views/Computer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHV0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
