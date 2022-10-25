@@ -38,7 +38,12 @@ public class ComputerController : Controller
         return RedirectToAction("Index");
     }
 
-    public IActionResult Update([FromForm] Computer computer)
+    public IActionResult Update()
+    {
+        return View();
+    }
+
+    public IActionResult UpdateData([FromForm] Computer computer)
     {
         Computer find = _context.Computers.Find(computer.Id);
         find.Processor = computer.Processor;
