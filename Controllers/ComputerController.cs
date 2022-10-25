@@ -40,7 +40,7 @@ public class ComputerController : Controller
 
     public IActionResult Update([FromForm] Computer computer)
     {
-        var find = _context.Computers.Find(computer.Id);
+        Computer find = _context.Computers.Find(computer.Id);
         find.Processor = computer.Processor;
         find.Ram = computer.Ram;
 

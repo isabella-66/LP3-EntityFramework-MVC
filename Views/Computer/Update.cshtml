@@ -4,9 +4,12 @@
     ViewData["Title"] = $"Editar Computador {Model.Id}";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+<hr>
 
-<form action="Update" method="post">
+<form action="UpdateForm" method="post">
     <p class="form-group">
         <label for="id"><b>Id</b></label>
         <div class="col-md-15">

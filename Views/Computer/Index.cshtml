@@ -4,9 +4,11 @@
     ViewData["Title"] = "Computadores";
 }
 
-<h1>@ViewData["Title"]</h1>
-<form action="/Computer/Create"><button class="btn btn-primary">Cadastrar</button></form>
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
 <hr>
+<form action="/Computer/Create"><button class="btn btn-primary">Cadastrar</button></form><br>
 
 @if(Model.Count() == 0)
 {
@@ -14,20 +16,20 @@
 } 
 else
 {
-    <table class="table table-responsive">
+    <table class="table table-responsive table-bordered table-hover">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Ram</th>
-                <th>Processador</th>
-                <th colspan="2">Ações</th>
+                <th scope="col">Id</th>
+                <th scope="col">Ram</th>
+                <th scope="col">Processador</th>
+                <th colspan="2" scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>
             @foreach(var computer in Model)
             {
                 <tr>
-                    <td>@computer.Id</td>
+                    <td scope="row">@computer.Id</td>
                     <td>@computer.Ram</td>
                     <td>@computer.Processor</td>
                     <td>

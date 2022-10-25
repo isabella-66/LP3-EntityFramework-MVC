@@ -4,9 +4,11 @@
     ViewData["Title"] = $"Computador {Model.Id}";
 }
 
-<h1>@ViewData["Title"]</h1>
-<form action="/Computer/Update"><button class="btn btn-primary">Atualizar</button></form>
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
 <hr>
+<a href="/Computer/Update" class="btn btn-primary">Atualizar</a><br>
 
 <p>
     <b>Id:</b> @Model.Id
