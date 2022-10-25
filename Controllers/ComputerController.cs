@@ -38,6 +38,16 @@ public class ComputerController : Controller
         return RedirectToAction("Index");
     }
 
+    public IActionResult Update(Computer computer, [FromForm] string ram, [FromForm] string processor)
+    {
+        var find = _context.Computers.Find(computer.Id);
+        find.Ram = ram;
+        find.Processor = processor;
+        _context.Computers.Update(find);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Delete(int id)
     {
         Computer computer = _context.Computers.Find(id);
