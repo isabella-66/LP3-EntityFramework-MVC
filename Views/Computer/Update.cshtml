@@ -10,26 +10,27 @@
 <hr>
 
 <form action="UpdateData" method="post">
-    <p class="form-group">
-        <label for="id"><b>Id</b></label>
-        <div class="col-md-15">
-            <input type="number" name="id" id="id" required>
+    <div class="form-group row">
+        <label for="id" class="col-sm-2 col-form-label"><b>Id</b></label>
+        <div class="col-md-3">
+            <input type="number" name="id" id="id" class="form-control" required>
         </div>
-    </p>
+    </div><br>
     
-    <p class="form-group">
-        <label for="ram"><b>Ram</b></label>
-        <div class="col-md-15">
-            <input type="text" name="ram" id="ram" required>
+    <div class="form-group row">
+        <label for="ram" class="col-sm-2 col-form-label"><b>Ram</b></label>
+        <div class="col-md-3">
+            <input type="text" name="ram" id="ram" class="form-control" required>
         </div>
-    </p>
+    </div><br>
 
-    <p class="form-group">
-        <label for="processor"><b>Processador</b></label>
-        <div class="col-md-15">
-            <input type="text" name="processor" id="processor" required>
+    <div class="form-group row">
+        <label for="processor" class="col-sm-2 col-form-label"><b>Processador</b></label>
+        <div class="col-md-3">
+            <input type="text" name="processor" id="processor" class="form-control" required>
         </div>
-    </p>
+    </div><br>
     
     <button type="submit" class="btn btn-success">Salvar</button>
+    <a href="/Computer/Index" class="btn btn-outline-warning">Cancelar</a>
 </form>
