@@ -54,4 +54,18 @@ public class LabController : Controller
         _context.SaveChanges();
         return RedirectToAction("Index");
     }
+
+    public IActionResult Delete(int id)
+    {
+        Lab lab = _context.Labs.Find(id);
+
+        if(lab == null)
+        {
+            return NotFound(); 
+        }
+
+        _context.Labs.Remove(lab);
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+    }
 }
