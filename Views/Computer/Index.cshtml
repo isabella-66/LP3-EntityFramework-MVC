@@ -8,7 +8,7 @@
     <h1>@ViewData["Title"]</h1>
 </div>
 <hr>
-<form action="/Computer/Create"><button class="btn btn-primary">Cadastrar</button></form><br>
+<a asp-controller="Computer" asp-action="Create" class="btn btn-primary">Cadastrar</a><br><br>
 
 @if(Model.Count() == 0)
 {
@@ -33,10 +33,10 @@ else
                     <td>@computer.Ram</td>
                     <td>@computer.Processor</td>
                     <td>
-                        <a class="btn btn-primary btn-sm" href="/Computer/Show/@computer.Id">Ver</a>
+                        <a asp-controller="Computer" asp-action="Show" asp-route-id="@computer.Id" class="btn btn-primary btn-sm">Ver</a>
                     </td>
                     <td>
-                        <form action="/Computer/Delete/@computer.Id"><button class="btn btn-danger btn-sm">Excluir</button></form>
+                        <a asp-controller="Computer" asp-action="Delete" asp-route-id="@computer.Id" class="btn btn-danger btn-sm">Excluir</a>
                     </td>
                 </tr>
             }
