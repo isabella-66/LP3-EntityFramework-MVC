@@ -8,7 +8,7 @@
     <h1>@ViewData["Title"]</h1>
 </div>
 <hr>
-<a href="/Lab/Update/@Model.Id" class="btn btn-primary">Atualizar</a><br>
+<a asp-controller="Lab" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary">Atualizar</a><br><br>
 
 <p>
     <b>Id:</b> @Model.Id
@@ -23,4 +23,4 @@
     <b>Bloco:</b> @Model.Block
 </p>
 
-<form action="/Lab"><button class="btn btn-outline-primary">Voltar</button></form>
+<a asp-controller="Lab" asp-action="Index" class="btn btn-outline-primary">Voltar</a>
