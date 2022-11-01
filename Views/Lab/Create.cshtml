@@ -11,28 +11,28 @@
 
 <form asp-controller="Lab" asp-action="CreateData" method="post">
     <div class="form-group row">
-        <label for="id" class="col-sm-2 col-form-label"><b>Id</b></label>
+        <label asp-for="Id" class="col-sm-2 col-form-label"><b>Id</b></label>
         <div class="col-md-3">
             <input asp-for="Id" class="form-control" required>
         </div>
     </div><br>
     
     <div class="form-group row">
-        <label for="number" class="col-sm-2 col-form-label"><b>Número</b></label>
+        <label asp-for="Number" class="col-sm-2 col-form-label"><b>Número</b></label>
         <div class="col-md-3">
             <input asp-for="Number" class="form-control" required>
         </div>
     </div><br>
 
     <div class="form-group row">
-        <label for="name" class="col-sm-2 col-form-label"><b>Nome</b></label>
+        <label asp-for="Name" class="col-sm-2 col-form-label"><b>Nome</b></label>
         <div class="col-md-3">
             <input asp-for="Name" class="form-control" required>
         </div>
     </div><br>
 
     <div class="form-group row">
-        <label for="block" class="col-sm-2 col-form-label"><b>Bloco</b></label>
+        <label asp-for="Block" class="col-sm-2 col-form-label"><b>Bloco</b></label>
         <div class="col-md-3">
             <input asp-for="Block" class="form-control" required>
         </div>

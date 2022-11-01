@@ -11,21 +11,21 @@
 
 <form asp-controller="Computer" asp-action="UpdateData" asp-route-id="@Model.Id" method="post">
     <div class="form-group row">
-        <label for="id" class="col-sm-2 col-form-label"><b>Id</b></label>
+        <label asp-for="Id" class="col-sm-2 col-form-label"><b>Id</b></label>
         <div class="col-md-3">
             <input asp-for="Id" value="@Model.Id" class="form-control-plaintext" disabled>
         </div>
     </div><br>
     
     <div class="form-group row">
-        <label for="ram" class="col-sm-2 col-form-label"><b>Ram</b></label>
+        <label asp-for="Ram" class="col-sm-2 col-form-label"><b>Ram</b></label>
         <div class="col-md-3">
             <input asp-for="Ram" value="@Model.Ram" class="form-control" required>
         </div>
     </div><br>
 
     <div class="form-group row">
-        <label for="processor" class="col-sm-2 col-form-label"><b>Processador</b></label>
+        <label asp-for="Processor" class="col-sm-2 col-form-label"><b>Processador</b></label>
         <div class="col-md-3">
             <input asp-for="Processor" value="@Model.Processor" class="form-control" required>
         </div>
