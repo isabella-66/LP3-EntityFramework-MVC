@@ -9,11 +9,12 @@
 </div>
 <hr>
 
-<form asp-controller="Lab" asp-action="CreateData" method="post">
+<form asp-controller="Lab" asp-action="Create" method="post">
     <div class="form-group row">
         <label asp-for="Id" class="col-sm-2 col-form-label"><b>Id</b></label>
         <div class="col-md-3">
             <input asp-for="Id" class="form-control" required>
+            <span asp-validation-for="Id" class="text-danger"></span>
         </div>
     </div><br>
     
@@ -21,6 +22,7 @@
         <label asp-for="Number" class="col-sm-2 col-form-label"><b>Número</b></label>
         <div class="col-md-3">
             <input asp-for="Number" class="form-control" required>
+            <span asp-validation-for="Number" class="text-danger"></span>
         </div>
     </div><br>
 
@@ -28,6 +30,7 @@
         <label asp-for="Name" class="col-sm-2 col-form-label"><b>Nome</b></label>
         <div class="col-md-3">
             <input asp-for="Name" class="form-control" required>
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
     </div><br>
 
@@ -35,6 +38,7 @@
         <label asp-for="Block" class="col-sm-2 col-form-label"><b>Bloco</b></label>
         <div class="col-md-3">
             <input asp-for="Block" class="form-control" required>
+            <span asp-validation-for="Block" class="text-danger"></span>
         </div>
     </div><br>
     

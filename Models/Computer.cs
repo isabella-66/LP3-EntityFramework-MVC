@@ -6,10 +6,8 @@ public class Computer
 {
     [Required (ErrorMessage = "Campo Id deve ser preenchido.")]
     public int Id { get; set; }
-
     [Required (ErrorMessage = "Campo RAM deve ser preenchido.")]
     public string Ram { get; set; }
-
     [Required (ErrorMessage = "Campo Processor deve ser preenchido.")]
     public string Processor { get; set; }
 

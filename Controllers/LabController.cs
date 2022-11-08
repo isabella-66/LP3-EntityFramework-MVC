@@ -26,13 +26,18 @@ public class LabController : Controller
         return View(lab);
     }
 
-    public IActionResult Create()
-    {
-        return View();
-    }
+    // public IActionResult Create()
+    // {
+    //     return View();
+    // }
 
-    public IActionResult CreateData([FromForm] Lab lab)
+    public IActionResult Create([FromForm] Lab lab)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(lab);
+        }
+
         _context.Labs.Add(lab);
         _context.SaveChanges();
         return RedirectToAction("Index");
