@@ -9,11 +9,12 @@
 </div>
 <hr>
 
-<form asp-controller="Computer" asp-action="CreateData" method="post">
+<form asp-controller="Computer" asp-action="Create" method="post">
     <div class="form-group row">
         <label asp-for="Id" class="col-sm-2 col-form-label"><b>Id</b></label>
         <div class="col-md-3">
-            <input asp-for="Id" class="form-control" required>
+            <input asp-for="Id" class="form-control">
+            <span asp-validation-for="Id" class="text-danger" required></span>
         </div>
     </div><br>
     
@@ -21,6 +22,7 @@
         <label asp-for="Ram" class="col-sm-2 col-form-label"><b>Ram</b></label>
         <div class="col-md-3">
             <input asp-for="Ram" class="form-control" required>
+            <span asp-validation-for="Ram" class="text-danger"></span>
         </div>
     </div><br>
 
@@ -28,6 +30,7 @@
         <label asp-for="Processor" class="col-sm-2 col-form-label"><b>Processador</b></label>
         <div class="col-md-3">
             <input asp-for="Processor" class="form-control" required>
+            <span asp-validation-for="Processor" class="text-danger"></span>
         </div>
     </div><br>
     

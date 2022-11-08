@@ -26,13 +26,18 @@ public class ComputerController : Controller
         return View(computer);
     }
 
-    public IActionResult Create()
-    {
-        return View();
-    }
+    // public IActionResult Create()
+    // {
+    //     return View();
+    // }
 
-    public IActionResult CreateData([FromForm] Computer computer)
+    public IActionResult Create([FromForm] Computer computer)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(computer);
+        }
+
         _context.Computers.Add(computer);
         _context.SaveChanges();
         return RedirectToAction("Index");

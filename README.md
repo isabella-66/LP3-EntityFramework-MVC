@@ -18,7 +18,7 @@ return View computer
 _context.C..Add
 _context.Save..
 
-return Rediirect...
+return Redirect...
 
 
 View Model - atributos sem Id, qnd é gerado aleatoriamente
